@@ -1,3 +1,15 @@
+- 단축키
+
+Ctrl + F5 : 디버깅 없이 실행  
+F5 : 디버깅 있이 실행  
+Ctrl + A : 모두선택  
+F9 : Break Point  
+F10 : 다음라인  
+Shift + F5 : 디버그 중단  
+F11 : 함수 안으로  
+
+- Hello World!
+
 ```cpp
 #include <iostream>
 
@@ -308,9 +320,13 @@ cout << lower_case_cnt << " " << upper_case_cnt << "\n";
 
 ```cpp
 char ch = 'A';
+int num = 97;
 
 cout << "char: " << ch << "\n";
 cout << "int: " << (int)ch << "\n";
+cout << "\n";
+cout << "num char: " << (char)num << "\n";
+cout << "num int: " << num << "\n";
 ```
 
 - 이차원 배열
@@ -396,9 +412,30 @@ int main()
 
 using namespace std;
 
-void func(int arr[3])
+void func(int local_a)
 {
-    arr[1] = 999;
+    local_a = 999;
+}
+
+int main()
+{
+    int a = 1;
+    func(a);
+    
+    cout << a << "\n";
+    
+    return 0;
+}
+```
+
+```cpp
+#include <iostream>
+
+using namespace std;
+
+void func(int local_arr[3])
+{
+    local_arr[1] = 999;
 }
 
 int main()
