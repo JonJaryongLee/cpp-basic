@@ -35,14 +35,7 @@ int main()
 - `endl`
 
 ```cpp
-#include <iostream>
-
-using namespace std;
-
-int main()
-{
-    cout << "Hello World" << endl;
-}
+cout << "Hello World" << endl;
 ```
 
 - 변수/자료형
@@ -352,10 +345,6 @@ for (int i = 0; i < 4; i++)
 - 함수
 
 ```cpp
-#include <iostream>
-
-using namespace std;
-
 // 두 정수를 더하는 함수
 int add(int a, int b)
 {
@@ -380,10 +369,6 @@ int main()
 - 전역변수, 지역변수
 
 ```cpp
-#include <iostream>
-
-using namespace std;
-
 int a = 1;
 
 void func(int b)
@@ -408,10 +393,6 @@ int main()
 - call by value / call by reference
 
 ```cpp
-#include <iostream>
-
-using namespace std;
-
 void func(int local_a)
 {
     local_a = 999;
@@ -429,10 +410,6 @@ int main()
 ```
 
 ```cpp
-#include <iostream>
-
-using namespace std;
-
 void func(int local_arr[3])
 {
     local_arr[1] = 999;
@@ -455,10 +432,6 @@ int main()
 - initialize
 
 ```cpp
-#include <iostream>
-
-using namespace std;
-
 // 초기화 안해도 알아서 초기화됨
 int num1;
 char name1[10];
